@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login System</title>
+</head>
+<body>
+
+<div class="form-body">
+    <div class="form-box">
+            <h1 id="headTitle">Sign Up</h1>
+            <div class="input-group">
+
+
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" oninput="emailValidation()"  id="emailField" placeholder="Email" class="form-control shadow-none">
+                    <!-- <div id="emailMessage">email must be like: test@gmail.com</div> -->
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" oninput="passwordValidation()" id="passwordField" placeholder="Password" class="form-control shadow-none">
+                    <!-- <div id="passwordMessage">At least one upper case English letter, one lower case English letter ,one digit, one special character</div> -->
+
+                </div>
+                <p id="message" class="d-none">
+                    User doesn't exist, please sign up
+                </p>
+            </div>
+            <p>Lost password <a href="#">Click here!</a></p>
+            <div class="btn-group">
+                <button type="button" id="signIn" onclick="signInOnClick()">Sign In</button>
+            </div>
+
+    </div>
+</div>
+
+<!-- =============================== bootstrap js file =============================== -->
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/main.js"></script>
+<script src="js/signin.js"></script>
+</body>
+</html>

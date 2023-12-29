@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login System</title>
+</head>
+<body>
+
+<div class="form-body">
+    <div class="form-box">
+            <h1 id="headTitle">Sign Up</h1>
+            <div class="input-group ">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" oninput="nameValidation()" onclick="nameSweetAlert()" id="nameInput" placeholder="Name" class="form-control shadow-none position-relative">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" oninput="emailValidation()" onclick="emailSweetAlert()" id="emailField" placeholder="Email" class="form-control shadow-none">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" oninput="passwordValidation()" onclick="passwordSweetAlert()" id="passwordField" placeholder="Password" class="form-control shadow-none">
+
+                </div>
+                <p id="message" class="d-none">
+                    Account is already exist
+                </p>
+            </div>
+            <div class="btn-group">
+                <button type="button" id="signUp" onclick="signUpOnClick()">Sign Up</button>
+            </div>
+            <p id="signinconvert"> 
+                Do you want to 
+                <a href="signin.html">
+                    <span class="fw-semibold" >Sign in</span>
+                </a>  
+            </p>
+    </div>
+</div>
+
+<!-- =============================== bootstrap js file =============================== -->
+<script src="js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

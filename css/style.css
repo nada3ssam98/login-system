@@ -1,0 +1,138 @@
+* ,
+*::after ,
+*::before
+{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+a {
+    display: inline-block;
+ }
+
+.form-body{
+    background-image:linear-gradient( rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url('../images/background.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .form-body p a{
+    text-decoration: none;
+    color: #8f146a;
+ }
+
+.form-box , .input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+}
+.form-box{
+    padding: 3.5rem 5rem;
+}
+.form-box h1{
+    color: #8f146a;
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-box p{
+  padding-block: 10px;
+}
+.form-box h1::after{
+    background-color: #8f146a;
+    position: absolute;
+    content: '';
+    bottom: -18px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 3px;
+    border-radius: 3px; 
+}
+
+.input-field{
+    background-color: #eaeaea;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.input-field i{
+    color: #999;
+}
+
+input{
+    width: 100%;
+}
+.form-control{
+    
+    background-color: transparent !important;
+    border: 0px !important;
+    padding: 0px ;
+    padding-left: 10px;
+}
+
+
+.form-control.is-invalid, .was-validated .form-control:invalid , .form-control.is-valid, .was-validated .form-control:valid
+{
+    padding-right: 0px !important;
+ } 
+.btn-group{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-group button{
+    flex-basis: 50%;
+    height: 40px;
+    background-color: #3c00a0;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    
+    
+}
+.btn-group button.disable{
+    background-color: #eaeaea;
+    color: #555;
+}
+#message{
+    color: red;
+    padding: 10px;
+}
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    
+  }
+  
+/* ====================== Start Media Query ======================*/
+@media screen and (min-width: 576px) {
+   
+ }
+ @media screen and (min-width: 768px) {
+ }
+ @media screen and (min-width: 992px) {
+   
+ }
+ @media screen and (min-width: 1200px) {
+    
+ }
+ @media screen and (min-width: 1400px) {
+  
+ }
+ /* ====================== End Media Query ======================*/
