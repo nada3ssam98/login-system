@@ -129,7 +129,10 @@ input{
  @media screen and (min-width: 992px) {
    .form-body{
     background-size: cover;
-    
+
+   }
+   html{
+    font-size: 10px;
    }
  }
  @media screen and (min-width: 1200px) {
