@@ -92,12 +92,12 @@ else{
         localStorage.setItem("sessionUserName",JSON.stringify(newMember.name));
         
     }
-    
+
     var emailAlreadyExist = false;
     for (var i = 0; i< arrayList.length; i++) 
     {
  
-            if(  emailInput.value == arrayList[i].email   )
+            if(  emailInput.value.toLowerCase()  == arrayList[i].email.toLowerCase()    )
             {
                 document.getElementById("message").classList.remove("d-none");
                 emailAlreadyExist = true;

@@ -14,7 +14,7 @@ function signInOnClick(){
     else{
         var userAlreadyExist = false;
         for (var i = 0; i < arrayList.length ;i++) {
-            if(emailInput.value == arrayList[i].email && passwordInput.value == arrayList[i].password){
+            if(emailInput.value.toLowerCase() == arrayList[i].email.toLowerCase()  && passwordInput.value.toLowerCase()  == arrayList[i].password.toLowerCase() ){
                 userAlreadyExist=true;
                 localStorage.setItem("userSessionName" , JSON.stringify(arrayList[i].name));
             }
